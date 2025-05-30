@@ -21,26 +21,22 @@ def check_data(h5ad_file):
     print(f"细胞数: {adata.n_obs}")
     print(f"基因数: {adata.n_vars}")
     
-    # 检查关键基因
     key_genes = ['FOXP3', 'IL2RA', 'BECN1']
     print("\n关键基因是否存在:")
     for gene in key_genes:
         present = gene in adata.var_names
         if present:
-            # 计算表达该基因的细胞数
             expr = adata[:, gene].X.toarray().flatten()
             n_expressed = np.sum(expr > 0)
             print(f"{gene}: 存在, {n_expressed}个细胞有表达 ({n_expressed/len(expr)*100:.2f}%)")
         else:
             print(f"{gene}: 不存在")
     
-    # 显示一些基因名示例
     print("\n基因名称示例:")
     print(list(adata.var_names[:10]))
     
     return adata
 
-# 使用方法
 input_file = args.input
 check_data(input_file)
 
