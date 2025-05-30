@@ -1,0 +1,11 @@
+Statistic,Value
+CD4 Treg Mean,0.7461307048797607
+Non-CD4-Treg Mean,0.01456731278449297
+CD4 Treg Median,0.5611375570297241
+Non-CD4-Treg Median,0.0
+CD4 Treg % Expressed,59.23566878980891
+Non-CD4-Treg % Expressed,0.8176389526871842
+t-statistic,23.24859778855965
+p-value (t-test),9.69303169388373e-87
+U-statistic,16225171.0
+p-value (Mann-Whitney),0.0

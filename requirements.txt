@@ -1,0 +1,8 @@
+scanpy
+loompy
+pandas
+numpy
+matplotlib
+seaborn
+argparse
+os
