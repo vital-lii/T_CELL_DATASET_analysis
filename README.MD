@@ -105,12 +105,4 @@ BECN1在Treg vs 非Treg细胞中的t检验: t=6.374860823787254, p=1.87007149659
 肺部T细胞数据集最终结果解释：BECN1在CD4 Treg细胞中的表达显著高于非CD4 Treg细胞（p<0.001），表现为中小程度的效应（Cohen's d=0.43）
 虽然表达水平差异的幅度适中，但CD4 Treg中有表达的细胞比例（39.17%）远高于非CD4 Treg细胞（8.09%）
 
-## 5.提取cd4_treg 与非cd4_treg 的差异基因。
-来源：CD4_Treg_vs_non_DEGs.csv
 
-工具：extrac.py 提取logfc绝对值大于1，p值小于0.05的基因。
-
-输出文件：extract.csv(自建空白文件)
-
-## 6.差异基因富集
-enrich_mul.py 富集分析
